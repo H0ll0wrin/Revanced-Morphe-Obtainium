@@ -10,7 +10,7 @@ rv-brand = "Morphe"
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube"
 excluded-patches = "'Change header'"
 patcher-args = "-e 'Custom branding' -OcustomName=YouTube -e 'Hide Shorts components' -OhideShortsAppShortcut=true -OhideShortsWidget=true -e 'Theme' -OlightThemeBackgroundColor=#E6E9EF"
 
