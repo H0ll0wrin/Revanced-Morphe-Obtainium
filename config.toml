@@ -33,7 +33,7 @@ patcher-args = "-e 'Custom branding' -OcustomName='YT Music'"
 patches-source = "icysymmetra/tiktok-patches-for-morphe"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
-version = "auto"
 pkg-name = "com.zhiliaoapp.musically"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
-uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
+version = "46.2.3"          # match whatever you actually host
+arch = "arm64-v8a"          # match whatever you actually host
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/tiktok-apk/com.zhiliaoapp.musically-46.2.3-arm64-v8a.apk"
