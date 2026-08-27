@@ -28,3 +28,11 @@ uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 excluded-patches = "'Change header'"
 patcher-args = "-e 'Custom branding' -OcustomName='YT Music'"
+
+[TikTok]
+patches-source = "icysymmetra/tiktok-patches-for-morphe"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+version = "auto"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
+uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
