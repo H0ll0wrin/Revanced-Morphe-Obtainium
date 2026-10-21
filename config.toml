@@ -12,8 +12,6 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
 
 version = "auto"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://dn790002.ca.archive.org/0/items/jhc-apks/apks/com.google.android.youtube/"
 
 excluded-patches = "'Change header'"
@@ -26,8 +24,6 @@ rv-brand = "Morphe"
 
 version = "auto"
 arch = "arm64-v8a"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 excluded-patches = "'Change header'"
@@ -56,6 +52,7 @@ pkg-name = "com.pinterest"
 version = "14.41.0"
 arch = "arm64-v8a" # this patch bundle only targets arm64-v8a
 direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.pinterest-14.41.0-arm64-v8a.apk"
+
 included-patches = "'Spoof signature for Google sign-in'"
 
 [Shazam]
@@ -69,3 +66,13 @@ arch = "arm64-v8a"
 direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.shazam.android-16.63.0-261008-arm64-v8a.apk"
 
 included-patches = "'GmsCore support' 'Remove screenshot restriction'"
+
+[IbisPaint X]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "jp.ne.ibis.ibispaintx.app"
+version = "14.1.0"
+arch = "arm64-v8a" # required by 'Enable Prime membership', which is on by default
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/jp.ne.ibis.ibispaintx.app-14.1.0-arm64-v8a.apk"
