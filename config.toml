@@ -47,3 +47,13 @@ direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/
 included-patches = "'AMOLED dark theme' 'Block P2P video relay' 'Hide Play Store update offer' 'Look like the store app' 'Remove content credential and card scanner assets' 'Remove creation tools' 'Remove unused language packs' 'Skip first-launch setup'"
 patcher-args = "-e 'Accent color' -OaccentColor=#8B5CF6 -e 'Change app name' -OappName=TikTok"
 
+[Pinterest]
+patches-source = "SysAdminDoc/HushPinterest"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "com.pinterest"
+version = "14.41.0"
+arch = "arm64-v8a" # this patch bundle only targets arm64-v8a
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.pinterest-14.41.0-arm64-v8a.apk"
+included-patches = "'Spoof signature for Google sign-in'"
