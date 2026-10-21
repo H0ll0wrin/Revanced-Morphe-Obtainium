@@ -6,68 +6,150 @@ parallel-jobs = 1
 
 # you can use rvmm-config-gen to generate a config
 
-[YouTube-Morphe]
-app-name = "YouTube"
+[YouTube]
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
-build-mode = "both"
+
+version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-enable-update-checks = true
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+archive-dlurl = "https://dn790002.ca.archive.org/0/items/jhc-apks/apks/com.google.android.youtube/"
 
-[Music-Morphe]
-app-name = "Music"
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Morphe"
-build-mode = "both"
-arch = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-enable-update-checks = true
-
-[Reddit-Morphe]
-app-name = "Reddit"
-rv-brand = "Morphe"
-build-mode = "both"
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
-dpi = "120-640dpi"
-
-[GooglePhotos]
-build-mode = "both"
-patches-source = "RookieEnough/De-Vanced"
-rv-brand = "DeVanced"
-cli-source = "MorpheApp/morphe-cli"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
-enable-update-checks = true
-
-[Twitter]
-patches-source = "crimera/piko-newx"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Piko"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
-version = "latest"
-included-patches = "'NewX: Restore Twitter branding'"
-enable-update-checks = true
+excluded-patches = "'Change header'"
+patcher-args = "-e 'Custom branding' -OcustomName=YouTube -e 'Hide Shorts components' -OhideShortsAppShortcut=true -OhideShortsWidget=true -e 'Theme' -OlightThemeBackgroundColor=#E6E9EF"
 
 [Music]
-enabled = false
-build-mode = "both"
-arch = "both"
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+version = "auto"
+arch = "arm64-v8a"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
-[YouTube]
-enabled = false
-build-mode = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+excluded-patches = "'Change header'"
+patcher-args = "-e 'Custom branding' -OcustomName='YT Music'"
 
-[Twitch]
-enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
+# -- Replaces the previous icysymmetra-sourced TikTok section --
+[TikTok]
+patches-source = "SysAdminDoc/hushfeed"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "com.zhiliaoapp.musically"
+version = "47.4.3"
+arch = "arm64-v8a"
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.zhiliaoapp.musically-47.4.3-arm64-v8a.apk"
+
+included-patches = "'AMOLED dark theme' 'Block P2P video relay' 'Hide Play Store update offer' 'Look like the store app' 'Remove content credential and card scanner assets' 'Remove creation tools' 'Remove unused language packs' 'Skip first-launch setup'"
+patcher-args = "-e 'Accent color' -OaccentColor=#8B5CF6 -e 'Change app name' -OappName=TikTok"
+
+["1DM"]
+patches-source = "dunecache/oyasumi-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "idm.internet.download.manager"
+version = "18.2"
+arch = "arm64-v8a"
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/idm.internet.download.manager-18.2-arm64-v8a.apk"
+
+["Amazon Shopping"]
+patches-source = "rushiranpise/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "com.amazon.mShop.android.shopping"
+version = "32.18.0.100"
+arch = "arm64-v8a"
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.amazon.mShop.android.shopping-32.18.0.100-arm64-v8a.apk"
+
+[Word]
+patches-source = "rushiranpise/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "com.microsoft.office.word"
+version = "16.0.20228.20090"
+arch = "arm64-v8a"
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.microsoft.office.word-16.0.20228.20090-arm64-v8a.apk"
+
+[Excel]
+patches-source = "rushiranpise/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "com.microsoft.office.excel"
+version = "16.0.20228.20090"
+arch = "arm64-v8a"
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.microsoft.office.excel-16.0.20228.20090-arm64-v8a.apk"
+
+[PowerPoint]
+patches-source = "kveld9/kveld-extra-morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "com.microsoft.office.powerpoint"
+version = "16.0.20527.20034"
+arch = "arm64-v8a"
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.microsoft.office.powerpoint-16.0.20527.20034-arm64-v8a.apk"
+
+["Google Maps"]
+patches-source = "bearinmindcat/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "com.google.android.apps.maps"
+version = "26.36.04.973607363"
+arch = "arm64-v8a"
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.google.android.apps.maps-26.36.04.973607363-arm64-v8a.apk"
+
+included-patches = "'Add microG support'"
+
+["IbisPaint X"]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "jp.ne.ibis.ibispaintx.app"
+version = "14.1.0"
+arch = "arm64-v8a" # required by 'Enable Prime membership', which is on by default
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/jp.ne.ibis.ibispaintx.app-14.1.0-arm64-v8a.apk"
+
+["Moon+ Reader"]
+patches-source = "binarymend/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "com.flyersoft.moonreader"
+version = "10.5"
+arch = "arm64-v8a"
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.flyersoft.moonreader-10.5-arm64-v8a.apk"
+
+[Pinterest]
+patches-source = "SysAdminDoc/HushPinterest"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "com.pinterest"
+version = "14.41.0"
+arch = "arm64-v8a" # this patch bundle only targets arm64-v8a
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.pinterest-14.41.0-arm64-v8a.apk"
+
+included-patches = "'Spoof signature for Google sign-in'"
+
+[Shazam]
+patches-source = "heval99/Heval-Morphe-Patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "com.shazam.android"
+# patches also support 16.62.0-261001 / 16.62.1-261006 - pinned to the newest
+version = "16.63.0-261008"
+arch = "arm64-v8a"
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.shazam.android-16.63.0-261008-arm64-v8a.apk"
+
+included-patches = "'GmsCore support' 'Remove screenshot restriction'"
