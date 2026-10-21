@@ -1,4 +1,5 @@
 Music: 9.20.53  
+Pinterest: 14.41.0  
 TikTok: 47.4.3  
 YouTube: 21.20.405  
 
@@ -11,5 +12,5 @@ Patches: MorpheApp/morphe-patches/patches-1.47.0.mpp
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0)
 
 CLI: MorpheApp/morphe-cli/morphe-desktop-1.18.1-all.jar  
-Patches: SysAdminDoc/hushfeed/patches-0.77.0.mpp  
-[Changelog](https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.77.0)  
+Patches: SysAdminDoc/HushPinterest/patches-0.0.12.mpp  
+[Changelog](https://github.com/SysAdminDoc/HushPinterest/releases/tag/v0.0.12)  
