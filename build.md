@@ -1,4 +1,3 @@
-IbisPaint: 14.1.0  
 Pinterest: 14.41.0  
 Shazam: 16.63.0-261008  
 TikTok: 47.4.3  
@@ -11,12 +10,11 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 Patches: heval99/Heval-Morphe-Patches/patches-1.17.0.mpp  
 [Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.17.0)
 
-Patches: hoo-dles/morphe-patches/patches-1.47.0.mpp  
-[Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0)
-
-CLI: MorpheApp/morphe-cli/morphe-desktop-1.18.1-all.jar  
-Patches: MorpheApp/morphe-patches/patches-1.47.0.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0)
-
 Patches: SysAdminDoc/HushPinterest/patches-0.0.12.mpp  
-[Changelog](https://github.com/SysAdminDoc/HushPinterest/releases/tag/v0.0.12)  
+[Changelog](https://github.com/SysAdminDoc/HushPinterest/releases/tag/v0.0.12)
+
+CLI: MorpheApp/morphe-cli/morphe-desktop-1.18.1-all.jar    
+
+Skipped:  
+Patches: hoo-dles/morphe-patches/patches-1.47.0.mpp  
+Patches: MorpheApp/morphe-patches/patches-1.47.0.mpp    
