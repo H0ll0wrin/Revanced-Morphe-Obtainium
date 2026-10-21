@@ -58,12 +58,14 @@ arch = "arm64-v8a" # this patch bundle only targets arm64-v8a
 direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.pinterest-14.41.0-arm64-v8a.apk"
 included-patches = "'Spoof signature for Google sign-in'"
 
-["IbisPaint X"]
-patches-source = "hoo-dles/morphe-patches"
+[Shazam]
+patches-source = "heval99/Heval-Morphe-Patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
 
-pkg-name = "jp.ne.ibis.ibispaintx.app"
-version = "14.1.0"
-arch = "arm64-v8a" # required by 'Enable Prime membership', which is on by default
-direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/jp.ne.ibis.ibispaintx.app-14.1.0-arm64-v8a.apk"
+pkg-name = "com.shazam.android"
+version = "16.63.0-261008"
+arch = "arm64-v8a"
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.shazam.android-16.63.0-261008-arm64-v8a.apk"
+
+included-patches = "'GmsCore support' 'Remove screenshot restriction'"
