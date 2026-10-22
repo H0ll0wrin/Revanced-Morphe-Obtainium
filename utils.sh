@@ -66,9 +66,10 @@ java() {
 }
 
 get_prebuilts() {
+	get_prebuilts() {
 	local cli_src=$1 cli_ver=$2 patches_src=$3 patches_ver=$4
 	pr "Getting prebuilts (${patches_src%/*})" >&2
-	local cl_dir=${patches_src%/*}
+	local cl_dir=${patches_src//\//-}
 	cl_dir=${TEMP_DIR}/${cl_dir,,}-rv
 	[ -d "$cl_dir" ] || mkdir "$cl_dir"
 
@@ -77,7 +78,7 @@ get_prebuilts() {
 		local tag=$1 src=$2 ver=${3-}
 
 		local dir=${src//\//-}
-  dir=${TEMP_DIR}/${dir,,}-rv
+		dir=${TEMP_DIR}/${dir,,}-rv
 		[ -d "$dir" ] || mkdir "$dir"
 
 		local rv_rel="https://api.github.com/repos/${src}/releases" name_ver
