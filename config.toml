@@ -67,16 +67,6 @@ direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/
 
 included-patches = "'GmsCore support' 'Remove screenshot restriction'"
 
-[IbisPaint]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Morphe"
-
-pkg-name = "jp.ne.ibis.ibispaintx.app"
-version = "14.1.0"
-arch = "arm64-v8a" # required by 'Enable Prime membership', which is on by default
-direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/jp.ne.ibis.ibispaintx.app-14.1.0-arm64-v8a.apk"
-
 [Word]
 patches-source = "rushiranpise/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
@@ -84,7 +74,6 @@ rv-brand = "Morphe"
 
 pkg-name = "com.microsoft.office.word"
 version = "16.0.20228.20090"
-arch = "arm64-v8a"
 direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.microsoft.office.word-16.0.20228.20090-arm64-v8a.apk"
 
 [Excel]
