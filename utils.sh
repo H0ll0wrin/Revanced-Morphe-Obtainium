@@ -76,8 +76,8 @@ get_prebuilts() {
 		set -- $src_ver
 		local tag=$1 src=$2 ver=${3-}
 
-		local dir=${src%/*}
-		dir=${TEMP_DIR}/${dir,,}-rv
+		local dir=${src//\//-}
+  dir=${TEMP_DIR}/${dir,,}-rv
 		[ -d "$dir" ] || mkdir "$dir"
 
 		local rv_rel="https://api.github.com/repos/${src}/releases" name_ver
