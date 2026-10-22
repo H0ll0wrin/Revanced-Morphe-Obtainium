@@ -145,9 +145,16 @@ get_prebuilts() {
 			tag_name=v${tag_name%.*}
 		fi
 
-		if [ "$tag" = "Patches" ]; then
-			if [ "$grab_cl" = "true" ]; then echo -e "[Changelog](https://github.com/${src}/releases/tag/${tag_name})\n" >>"${cl_dir}/changelog.md"; fi
-			if [ "$REMOVE_RV_INTEGRATIONS_CHECKS" = "true" ]; then
+		                if [ "$tag" = "Patches" ]; then
+                        if [ "$grab_cl" = "true" ]; then
+                                local rel_body
+                                rel_body=$(jq -r '.body // empty' <<<"$resp")
+                                echo -e "[Changelog](https://github.com/${src}/releases/tag/${tag_name})\n" >>"${cl_dir}/changelog.md"
+                                if [ -n "$rel_body" ]; then
+                                        echo -e "${rel_body}\n" >>"${cl_dir}/changelog.md"
+                                fi
+                        fi
+                        if [ "$REMOVE_RV_INTEGRATIONS_CHECKS" = "true" ]; then
 				local extensions_ext
 				extensions_ext=$(unzip -l "${file}" "extensions/shared.*" | grep -o "shared\..*") extensions_ext="${extensions_ext#*.}"
 				(
