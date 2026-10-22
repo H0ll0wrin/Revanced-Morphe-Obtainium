@@ -1,6 +1,8 @@
+Excel: 16.0.20228.20090  
 IbisPaint: 14.1.0  
 Music: 9.20.53  
 Pinterest: 14.41.0  
+PowerPoint: 16.0.20527.20034  
 Shazam: 16.63.0-261008  
 TikTok: 47.4.3  
 YouTube: 21.20.405  
@@ -53,7 +55,28 @@ Patches: hoo-dles/morphe-patches/patches-1.47.0.mpp
 * **ProtonVPN:** Update patches to support `5.20.57.0` ([8f6d304](https://github.com/hoo-dles/morphe-patches/commit/8f6d3047017fdc088890d674aa287689c6690117))
 * Update `Universal MicroG` support for FotMob ([8c5f249](https://github.com/hoo-dles/morphe-patches/commit/8c5f2498c5a611b677b340bfcd49a9d60d53e98b))
 
-CLI: MorpheApp/morphe-cli/morphe-desktop-1.18.1-all.jar  
+Patches: kveld9/kveld-extra-morphe-patches/patches-1.26.0.mpp  
+[Changelog](https://github.com/kveld9/kveld-extra-morphe-patches/releases/tag/v1.26.0)
+
+## [1.26.0](https://github.com/kveld9/kveld-extra-morphe-patches/compare/v1.25.2...v1.26.0) (2026-10-22)
+
+### Bug Fixes
+
+* **capcut:** stop the security notice returning through the template feed ([0d7ab27](https://github.com/kveld9/kveld-extra-morphe-patches/commit/0d7ab2787e3b5e5575b6d540c0e0839080d06736))
+* **harness:** ignore abandoned Xiaomi 9.x branch in update checker ([6d644bd](https://github.com/kveld9/kveld-extra-morphe-patches/commit/6d644bd09d43a960b1c3d6b4299c2fc0db957475))
+* **lrmobile:** drop Lightroom support because no compatible download remains ([d92d5e0](https://github.com/kveld9/kveld-extra-morphe-patches/commit/d92d5e0855d9563defdb2e3b85d525ae0361025e))
+* **multiaccounts:** drop Multiple Accounts support, protectors kill any patched build ([08c821c](https://github.com/kveld9/kveld-extra-morphe-patches/commit/08c821c06b8d224c194e425505aaec0b78cf92ff))
+* **multiaccounts:** keep the app alive on launch by completing first-run setup silently ([114b3aa](https://github.com/kveld9/kveld-extra-morphe-patches/commit/114b3aa2d49707e412d8c41cd44ef6940830221c))
+* **multiaccounts:** remove sideload-compat hooks that killed the app at startup ([c720c17](https://github.com/kveld9/kveld-extra-morphe-patches/commit/c720c174d97c640b0c2f59c161be2298df408cbe))
+
+### New Features
+
+* **harness:** include exact variant download link in update issues ([0d26135](https://github.com/kveld9/kveld-extra-morphe-patches/commit/0d261357bb51dee15cdd37305e88ec14a885f44e))
+
+### Code Refactoring
+
+* **harness:** remove unused Uptodown support from the update checker ([8945d72](https://github.com/kveld9/kveld-extra-morphe-patches/commit/8945d72b3ca12329bab715193be1209deb9b4e98))
+
 Patches: MorpheApp/morphe-patches/patches-1.47.0.mpp  
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.47.0)
 
@@ -116,6 +139,21 @@ Patches: MorpheApp/morphe-patches/patches-1.47.0.mpp
 * **Reddit:** Add experimental support for `2026.41.0` ([4e56069](https://github.com/MorpheApp/morphe-patches/commit/4e56069f64125347959f7a8b1efeffa3e8fac1d6))
 * **YouTube:** Add support for `21.20.405` ([4cb3bd8](https://github.com/MorpheApp/morphe-patches/commit/4cb3bd872d57f036dce22692dcfb76f80df5ec20))
 
+Patches: rushiranpise/morphe-patches/patches-1.23.0.mpp  
+[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.0)
+
+## [1.23.0](https://github.com/rushiranpise/morphe-patches/compare/v1.22.0...v1.23.0) (2026-10-14)
+
+### 🐛 Bug Fixes
+
+* remove Relane patches ([29819ed](https://github.com/rushiranpise/morphe-patches/commit/29819edeab47def853a57a52a5b5fd6f5db6dbdc)), closes [#1033](https://github.com/rushiranpise/morphe-patches/issues/1033)
+* update verified app versions ([5ca039c](https://github.com/rushiranpise/morphe-patches/commit/5ca039c16f9d766678d5c697d6dee6cd19f67f7a))
+
+### ✨ New Features
+
+* **life360:** add themed icon patch with adaptive support ([83226e3](https://github.com/rushiranpise/morphe-patches/commit/83226e3034b86e8923915cf09831ad394d291d19))
+
+CLI: MorpheApp/morphe-cli/morphe-desktop-1.18.1-all.jar  
 Patches: SysAdminDoc/hushfeed/patches-0.77.0.mpp  
 [Changelog](https://github.com/SysAdminDoc/hushfeed/releases/tag/v0.77.0)
 
