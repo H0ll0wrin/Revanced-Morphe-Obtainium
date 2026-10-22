@@ -66,7 +66,6 @@ java() {
 }
 
 get_prebuilts() {
-	get_prebuilts() {
 	local cli_src=$1 cli_ver=$2 patches_src=$3 patches_ver=$4
 	pr "Getting prebuilts (${patches_src%/*})" >&2
 	local cl_dir=${patches_src//\//-}
