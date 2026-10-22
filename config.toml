@@ -29,7 +29,6 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.a
 excluded-patches = "'Change header'"
 patcher-args = "-e 'Custom branding' -OcustomName='YT Music'"
 
-# -- Replaces the previous icysymmetra-sourced TikTok section --
 [TikTok]
 patches-source = "SysAdminDoc/hushfeed"
 cli-source = "MorpheApp/morphe-cli"
@@ -115,7 +114,6 @@ pkg-name = "com.amazon.mShop.android.shopping"
 version = "32.18.0.100"
 arch = "arm64-v8a"
 direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.amazon.mShop.android.shopping-32.18.0.100-arm64-v8a.apk"
-
 [Google Maps]
 patches-source = "bearinmindcat/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
