@@ -95,3 +95,35 @@ pkg-name = "com.microsoft.office.powerpoint"
 version = "16.0.20527.20034"
 arch = "arm64-v8a"
 direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.microsoft.office.powerpoint-16.0.20527.20034-arm64-v8a.apk"
+
+[1DM]
+patches-source = "dunecache/oyasumi-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "idm.internet.download.manager"
+version = "18.2"
+arch = "arm64-v8a"
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/idm.internet.download.manager-18.2-arm64-v8a.apk"
+
+[Amazon Shopping]
+patches-source = "rushiranpise/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "com.amazon.mShop.android.shopping"
+version = "32.18.0.100"
+arch = "arm64-v8a"
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.amazon.mShop.android.shopping-32.18.0.100-arm64-v8a.apk"
+
+[Google Maps]
+patches-source = "bearinmindcat/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+
+pkg-name = "com.google.android.apps.maps"
+version = "26.36.04.973607363"
+arch = "arm64-v8a"
+direct-dlurl = "https://github.com/H0ll0wrin/Revanced-Morphe-Obtainium/releases/download/apks/com.google.android.apps.maps-26.36.04.973607363-arm64-v8a.apk"
+
+included-patches = "'Add microG support'"
